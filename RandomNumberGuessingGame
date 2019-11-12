@@ -1,0 +1,27 @@
+import random
+
+
+randomNumber = random.randint(1,100)
+print(randomNumber)
+
+guess = input('please enter a number from 1 to 100 ')
+guess = int(guess)
+guessesTaken = 0
+
+
+    
+while guess != randomNumber:
+        if guess > randomNumber:
+            print('Your guess is too high.')
+            input('Please enter a new guess ')
+            guess = int(guess)
+            guessesTaken =+1 
+        if guess < randomNumber:
+            print('Your guess is too low.')
+            input('Please enter a new guess ')
+            guess = int(guess)
+            guessesTaken =+1
+        if guess == randomNumber:
+            print('You got it! The random number was ' + str(randomNumber) + '. It took you ' + str(guessesTaken) + ' guesses!')
+        
+        
