@@ -15,11 +15,11 @@ while guess != randomNumber:
             print('Your guess is too high.')
             guess = input('Please enter a new guess ')
             guess = int(guess)
-            guessesTaken = guessesTaken + 1 
+            guessesTaken +=1 
         if guess < randomNumber:
             print('Your guess is too low.')
             guess = input('Please enter a new guess ')
             guess = int(guess)
-            guessesTaken = guessesTaken + 1
+            guessesTaken +=1
         if guess == randomNumber:
             print('You got it! The random number was ' + str(randomNumber) + '. It took you ' + str(guessesTaken) + ' guesses!')
